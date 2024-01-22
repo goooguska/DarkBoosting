@@ -1,0 +1,23 @@
+@import '/src/assets/fonts/fonts.css';
+:root {
+  --color-dark-blue: #171026;
+  --color-white: #ffffff;
+  --color-orange: ##d76700;
+  --color-light-orange: #f1a22a;
+  --color-light-purple: #867197;
+  --color-purple: #4a3a5f;
+  --color-gray: #cccccc;
+  --color-light-gray: #e6e6e6;
+  --color-lilac: #dcd2e4;
+}
+:root {
+  --color-font-primary: var(--color-dark-blue);
+  --color-font-secondary: var(--color-white);
+  --color-font-third: var(--color-orange);
+  --color-font-highlight: var(--color-light-orange);
+  --color-font-more: var(--color-light-purple);
+}
+
+body {
+  font-family: 'Fira Sans', 'Handelson Six_CYR', sans-serif;
+}
