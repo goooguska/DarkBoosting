@@ -13,44 +13,13 @@
         <RouterLink to="/" class="link">ПОДАРКИ</RouterLink>
         <RouterLink to="/" class="link">МОНЕТЫ</RouterLink>
         <RouterLink to="/" class="link">КОШЕЛЁК</RouterLink>
-        <DropdownList />
-        <!-- <div class="account__dropdowns">
-          <div
-            class="dropdown"
-            id="profile"
-            v-on:mouseenter="openProfile = true"
-            v-on:mouseleave="openProfile = false"
-          >
-            <img src="@/assets/images/icons/avatar-warrior.svg" alt="#" />
-            <img src="@/assets/images/icons/arrow-down.svg" alt="#" />
-          </div>
+        <DropdownList :items="profileItems" type="link">
+          <img src="@/assets/images/icons/avatar-warrior.svg" alt="#" />
+        </DropdownList>
 
-          <div class="dropdown__list" v-if="openProfile === true">
-            <ul class="list-items" id="profileList ">
-              <li class="list-items-item" v-for="item of profileItems" v-bind:key="item">
-                <RouterLink class="list-items-item-link" to="">{{ item }} </RouterLink>
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="dropdown"
-            id="lang"
-            v-on:mouseenter="openLang = true"
-            v-on:mouseleave="openLang = false"
-          >
-            <p class="lang">РYС</p>
-            <img src="@/assets/images/icons/arrow-down.svg" alt="#" />
-          </div>
-
-          <div class="dropdown__list" v-if="openLang === true">
-            <ul class="list-items" id="langList ">
-              <li class="list-items-item" v-for="item of langItems" v-bind:key="item">
-                <RouterLink class="list-items-item-link" to="">{{ item }} </RouterLink>
-              </li>
-            </ul>
-          </div>
-        </div> -->
+        <DropdownList :items="langItems" type="lang">
+          <p class="lang">РYС</p>
+        </DropdownList>
       </div>
     </div>
   </header>
@@ -59,11 +28,30 @@
 <script setup>
 import DropdownList from '@/components/DropdownList.vue'
 
-// const openProfile = ref(false)
-// const openLang = ref(false)
+const profileItems = [
+  {
+    name: 'Профиль',
+    url: '/profile'
+  },
+  {
+    name: 'Финансы',
+    url: '/finances'
+  },
+  {
+    name: 'История заказов',
+    url: '/history'
+  },
+  {
+    name: 'Настройки',
+    url: '/settings'
+  },
+  {
+    name: 'Выйти',
+    url: '/exit'
+  }
+]
 
-// const profileItems = ['Профиль', 'Финансы', 'История заказов', 'Настройки', 'Выйти']
-// const langItems = ['РYС', 'ENG']
+const langItems = ['РYС', 'ENG']
 </script>
 
 <style scoped>
@@ -107,26 +95,9 @@ ul {
 .account {
   gap: 63px;
 }
-.account__dropdowns {
-  position: relative;
-
-  gap: 34px;
-}
-.dropdown {
-  gap: 4px;
-  cursor: pointer;
-}
-
-.list-items {
-  text-align: center;
-  position: absolute;
-  left: 40%;
-}
-
 .lang {
   font-size: 16px;
-  font-weight: 700;
-  color: var(--color-font-primary);
+  font-weight: 900;
   font-family: 'Fira Sans';
 }
 .link::before {
