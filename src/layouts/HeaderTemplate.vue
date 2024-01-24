@@ -73,6 +73,7 @@ ul {
   gap: 25px;
 }
 .burger-menu {
+  cursor: pointer;
   gap: 8px;
 }
 .burger-text {
@@ -81,7 +82,7 @@ ul {
   color: var(--color-font-primary);
   font-family: 'Fira Sans';
 }
-.dropdown,
+
 .burger-menu,
 .info,
 .container,
@@ -96,19 +97,27 @@ ul {
   gap: 63px;
 }
 .lang {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 900;
   font-family: 'Fira Sans';
 }
+
 .link::before {
   content: '';
   display: inline-block;
   width: 35px;
   height: 35px;
 }
+.lang:hover,
+.link:hover {
+  color: var(--color-font-third);
+  transition: 0.3s ease-in-out;
+}
 .link:nth-child(1)::before {
   background-image: url('@/assets/images/icons/gift.svg');
 }
+
 .link:nth-child(2)::before {
   background-image: url('@/assets/images/icons/coin.svg');
 }
@@ -116,6 +125,7 @@ ul {
   background-image: url('@/assets/images/icons/purse.svg');
 }
 .link {
+  font-weight: 500;
   gap: 8px;
 }
 </style>
