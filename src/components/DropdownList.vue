@@ -1,7 +1,6 @@
 <template>
   <div class="dropdown" @mouseenter="show = true">
     <slot />
-    <!-- <img src="/src/assets/images/icons/arrow-down.svg" alt="#" /> -->
     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0.833984 3.3335L5.00065 7.50016L9.16732 3.3335H0.833984Z" fill="#171026" />
     </svg>

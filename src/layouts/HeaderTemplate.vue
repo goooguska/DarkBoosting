@@ -3,12 +3,14 @@
     <div class="container">
       <div class="info">
         <img src="@/assets/images/icons/logo.svg" alt="#" class="logo" />
-        <div class="burger-menu">
-          <img src="@/assets/images/icons/burger.svg" alt="#" class="burger-icon" id="burger" />
-          <p class="burger-text">ИГРЫ</p>
-        </div>
+
+        <BurgerMenu :items="gameItems" type="game">
+          <p class="text">ИГРЫ</p>
+        </BurgerMenu>
+
         <img src="@/assets/images/icons/trophyroom.svg" alt="#" class="trophy" />
       </div>
+
       <div class="account">
         <RouterLink to="/" class="link">ПОДАРКИ</RouterLink>
         <RouterLink to="/" class="link">МОНЕТЫ</RouterLink>
@@ -26,8 +28,42 @@
 </template>
 
 <script setup>
+import BurgerMenu from '@/components/BurgerMenu.vue'
 import DropdownList from '@/components/DropdownList.vue'
-
+const gameItems = [
+  {
+    name: 'LoL',
+    url: '/LeagueOfLegends'
+  },
+  {
+    name: 'WOWClassic',
+    url: '/WoWClassic'
+  },
+  {
+    name: 'Hearthstone',
+    url: '/Hearthstone'
+  },
+  {
+    name: 'Valorant',
+    url: '/Valorant'
+  },
+  {
+    name: 'Dota2',
+    url: '/Dota2'
+  },
+  {
+    name: 'Overwatch',
+    url: '/Overwatch'
+  },
+  {
+    name: 'CSGO',
+    url: '/CSGO'
+  },
+  {
+    name: 'WOWBFA',
+    url: '/WOWBFA'
+  }
+]
 const profileItems = [
   {
     name: 'Профиль',
@@ -76,7 +112,7 @@ ul {
   cursor: pointer;
   gap: 8px;
 }
-.burger-text {
+.text {
   font-size: 16px;
   font-weight: 500;
   color: var(--color-font-primary);
