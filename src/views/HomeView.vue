@@ -1,7 +1,11 @@
 <template>
-  <div></div>
+  <div>
+    <MainPromo> </MainPromo>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import MainPromo from '@/components/MainPromo.vue'
+</script>
 
 <style scoped></style>
