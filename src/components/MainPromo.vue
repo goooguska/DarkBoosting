@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import ButtonOutline from '@/UI/ButtonOutline.vue'
+import ButtonOutline from '@/components/UI/ButtonOutline.vue'
 </script>
 
 <style scoped>
@@ -116,7 +116,7 @@ import ButtonOutline from '@/UI/ButtonOutline.vue'
 .list-item:nth-child(3)::before{
   background-image: url('/src/assets/images/icons/ratingGift.svg'); 
 }
-@media(max-width:1440px){
+@media(max-width:1600px){
   .promo__image-raven{
     width: 100%;
     top: 35%;

@@ -1,7 +1,7 @@
 <template>
     <div class="card"  v-for="(card,i) of cards" :key="i">
         <img class="card-image"   :src="`${card.image}`" alt="#" >
-        <h3 class="card-subtitle" >{{ card.title }}</h3>
+        <h4 class="card-subtitle" >{{ card.title }}</h4>
         <p class="card-text" >{{ card.description }} </p>        
     </div>
 </template>
@@ -34,4 +34,5 @@ defineProps({
     color: var(  --color-font-primary);
 
 }
+
 </style>

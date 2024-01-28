@@ -1,7 +1,10 @@
 <template>
-    <div class="advantages">
+    <div class="container">
+        <div class="advantages">
         <CardAdvantage :cards="cardItems"/>
     </div>
+    </div>
+   
 </template>
 
 <script setup>
@@ -29,11 +32,23 @@ const cardItems =[{
 </script>
 
 <style scoped>
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 120px;
+}
 .advantages{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 125px;
     gap: 60px;
 }
 
+@media(max-width:1600px){
+    .advantages{
+        margin-top: 300px;
+
+    }
+}
 </style>
