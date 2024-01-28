@@ -9,6 +9,8 @@
   --color-gray: #cccccc;
   --color-light-gray: #e6e6e6;
   --color-lilac: #dcd2e4;
+  --color-dark-gray:#fefefe26
+
 }
 :root {
   --color-font-primary: var(--color-dark-blue);
@@ -16,6 +18,7 @@
   --color-font-third: var(--color-orange);
   --color-font-highlight: var(--color-light-orange);
   --color-font-more: var(--color-light-purple);
+  --color-background-button:var(--color-dark-gray);
 }
 
 
