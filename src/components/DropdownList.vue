@@ -51,7 +51,7 @@ a {
 
   top: 100%;
   left: -70%;
-
+  z-index:3 ;
   list-style: none;
 }
 .list-item {
