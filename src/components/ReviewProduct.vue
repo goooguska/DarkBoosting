@@ -14,7 +14,7 @@
                     <li class="list-item"><RouterLink to="/forum"  class="link">Форумах </RouterLink></li>
                     <li class="list-item"><RouterLink to="/servisReview" class="link">Сервисе отзывов </RouterLink></li>
                     <li class="list-item"><RouterLink to="/website" class="link">Нашем сайте </RouterLink></li>
-
+                   
                 </ul>
             </div>    
 
@@ -28,6 +28,7 @@
 </script>
 
 <style scoped>
+
 ul{
     list-style: none;
 }

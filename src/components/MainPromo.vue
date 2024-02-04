@@ -6,7 +6,7 @@
         Как получить <span class="title-span">кайф </span> от игры, если в твоей команде раки?
       </h1>
       <p class="subtitle">Закажи у нас буст и поднимись на свой реальный рейтинг</p>
-      <ButtonOutline class="button"> Заказать буст</ButtonOutline>
+      <ButtonOutlineWhite class="button"> Заказать буст</ButtonOutlineWhite>
     </div>
     <div class="promo__gift">
       <p class="gift-text">Сделай первый заказ <br> и получи дополнительно</p>
@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import ButtonOutline from '@/components/UI/ButtonOutline.vue'
+import ButtonOutlineWhite from '@/components/UI/ButtonOutlineWhite.vue'
 </script>
 
 <style scoped>
