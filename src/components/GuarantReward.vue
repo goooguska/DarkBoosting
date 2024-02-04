@@ -4,7 +4,7 @@
             <h3 class="title">Получи  гарантированную  награду</h3>
             <p class="description"> Мы заботимся про наших клиентов, поэтому заказывая буст у нас, ты можешь получить различные награды</p>
             <GuarantRewardList :items="cards"></GuarantRewardList>
-            <ButtonOutlineWhite>Заказать буст</ButtonOutlineWhite>
+            <ButtonOutlineWhite class="button">Заказать буст</ButtonOutlineWhite>
     </div>
 </div>
 
@@ -47,22 +47,34 @@ const cards = [
 
 <style scoped>
 .content {
+    margin-top: 140px;
     background-image: url('/src/assets/images/backgrounds/giftsGuarantBG.png');
 
 }
 .container {
-
+    text-align: center;
     max-width: 1420px;
     width: 100%;
     margin: 0 auto;
 }
 
 .title {
+    padding-top: 90px;
     font-family: "Handelson Six_CYR";
     font-size: 54px;
     font-weight: normal;
+    color: var(--color-font-secondary);
 
 }
 .description {
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--color-font-secondary);
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+.button{
+    margin-top: 40px;
 }
 </style>
