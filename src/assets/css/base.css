@@ -19,6 +19,7 @@
   --color-font-third: var(--color-orange);
   --color-font-highlight: var(--color-light-orange);
   --color-font-more: var(--color-light-purple);
+  --color-font-numbers:var(--color-purple);
   --color-card-background:var(--color-light-purple-oppacity);
   --color-background-button:var(--color-dark-gray);
 }
