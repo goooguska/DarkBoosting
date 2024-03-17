@@ -5,13 +5,12 @@
   --color-orange: #d76700;
   --color-light-orange: #f1a22a;
   --color-light-purple: #867197;
-  --color-light-purple-oppacity: rgba(86, 71, 97, 0.2); ;
+  --color-light-purple-oppacity: rgba(86, 71, 97, 0.2);
   --color-purple: #4a3a5f;
   --color-gray: #cccccc;
   --color-light-gray: #e6e6e6;
   --color-lilac: #dcd2e4;
-  --color-dark-gray:#fefefe26
-
+  --color-dark-gray: #fefefe26;
 }
 :root {
   --color-font-primary: var(--color-dark-blue);
@@ -19,12 +18,11 @@
   --color-font-third: var(--color-orange);
   --color-font-highlight: var(--color-light-orange);
   --color-font-more: var(--color-light-purple);
-  --color-font-numbers:var(--color-purple);
-  --color-card-background:var(--color-light-purple-oppacity);
-  --color-background-button:var(--color-dark-gray);
+  --color-font-numbers: var(--color-purple);
+  --color-card-background: var(--color-light-purple-oppacity);
+  --color-background-button: var(--color-dark-gray);
+  --color-line: var(--color-gray);
 }
-
-
 
 body {
   font-family: 'Fira Sans', 'Handelson Six_CYR', sans-serif;

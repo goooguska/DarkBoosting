@@ -1,38 +1,9 @@
-<template>
-  <header>
-    <div class="container">
-      <div class="info">
-        <img src="@/assets/images/icons/logo.svg" alt="#" class="logo" />
-
-        <BurgerMenu :items="gameItems" type="game">
-          <p class="text">ИГРЫ</p>
-        </BurgerMenu>
-
-        <img src="@/assets/images/icons/trophyroom.svg" alt="#" class="trophy" />
-      </div>
-
-      <div class="account">
-        <RouterLink to="/" class="link">ПОДАРКИ</RouterLink>
-        <RouterLink to="/" class="link">МОНЕТЫ</RouterLink>
-        <RouterLink to="/" class="link">КОШЕЛЁК</RouterLink>
-        <DropdownList :items="profileItems" type="link">
-          <img src="@/assets/images/icons/avatar-warrior.svg" alt="#" />
-        </DropdownList>
-
-        <DropdownList :items="langItems" type="lang">
-          <p class="lang">РYС</p>
-        </DropdownList>
-      </div>
-    </div>
-  </header>
-</template>
-
 <script setup>
 import BurgerMenu from '@/components/BurgerMenu.vue'
 import DropdownList from '@/components/DropdownList.vue'
 const gameItems = [
   {
-    name: 'LoL',
+    name: 'League of Legends',
     url: '/LeagueOfLegends'
   },
   {
@@ -89,6 +60,34 @@ const profileItems = [
 
 const langItems = ['РYС', 'ENG']
 </script>
+<template>
+  <header>
+    <div class="container">
+      <div class="info">
+        <img src="@/assets/images/icons/logo.svg" alt="#" class="logo" />
+
+        <BurgerMenu :items="gameItems" type="game">
+          <p class="text">ИГРЫ</p>
+        </BurgerMenu>
+
+        <img src="@/assets/images/icons/trophyroom.svg" alt="#" class="trophy" />
+      </div>
+
+      <div class="account">
+        <RouterLink to="/" class="link">ПОДАРКИ</RouterLink>
+        <RouterLink to="/" class="link">МОНЕТЫ</RouterLink>
+        <RouterLink to="/" class="link">КОШЕЛЁК</RouterLink>
+        <DropdownList :items="profileItems" type="link">
+          <img src="@/assets/images/icons/avatar-warrior.svg" alt="#" />
+        </DropdownList>
+
+        <DropdownList :items="langItems" type="lang">
+          <p class="lang">РYС</p>
+        </DropdownList>
+      </div>
+    </div>
+  </header>
+</template>
 
 <style scoped>
 a {
